@@ -131,6 +131,7 @@ export const Projects = () => {
                     <Github className="w-5 h-5" />
                   </a>
                 </div>
+                
                 {/* Status Show */}
                 {project.status && (
                   <span className="absolute bottom-3 right-3 z-10 px-3 py-1 text-xs rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 backdrop-blur shadow-sm">
