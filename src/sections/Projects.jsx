@@ -60,7 +60,26 @@ const projects = [
     status: "In Progress",
     link: "#",
     github: "https://github.com/deveshgi/resumeAI"
-  }
+  },
+  {
+  title: "Portfolio Website",
+  description:
+    "A modern React-based portfolio website showcasing my projects, skills, and contact details with smooth UI and responsive design.",
+  caseStudy: "#",
+  image: "/projects/portfolio.png",
+
+  tags: ["React", "JavaScript", "Tailwind",],
+
+  features: [
+    "Component-based architecture",
+    "Responsive design",
+    "Project showcase section",
+    "Smooth navigation"
+  ],
+
+  link: "https://portfolio-seven-black-44.vercel.app/",
+  github: "https://github.com/deveshgi/portfolio"
+}
 ];
 
 export const Projects = () => {
@@ -97,7 +116,7 @@ export const Projects = () => {
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, idx) => (
+          {sortedProjects.map((project, idx) => (
             <div
               key={idx}
               className="group glass rounded-2xl overflow-hidden md:row-span-1"
@@ -108,6 +127,8 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
@@ -131,10 +152,10 @@ export const Projects = () => {
                     <Github className="w-5 h-5" />
                   </a>
                 </div>
-                
+
                 {/* Status Show */}
                 {project.status && (
-                  <span className="absolute bottom-3 right-3 z-10 px-3 py-1 text-xs rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 backdrop-blur shadow-sm">
+                  <span className="absolute bottom-3 right-3 z-10 px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/30 backdrop-blur shadow-sm">
                     {project.status}
                   </span>
                 )}

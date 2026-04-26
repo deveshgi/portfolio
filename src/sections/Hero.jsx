@@ -39,6 +39,8 @@ export const Hero = () => {
         <img
           src="/hero-bg.jpg"
           alt="Hero background"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
@@ -142,6 +144,8 @@ export const Hero = () => {
                 <img
                   src="/image.png"
                   alt="Devesh Kumar"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
 
