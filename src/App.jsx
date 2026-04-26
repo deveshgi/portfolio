@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import { Navbar } from "@/layout/Navbar";
 import { Hero } from "@/sections/Hero";
@@ -36,6 +37,7 @@ function App() {
 
         {/* <Route path="/case-study/:slug" element={<CaseStudy />} /> */}
       </Routes>
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
