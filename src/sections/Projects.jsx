@@ -58,7 +58,7 @@ const projects = [
       "PDF export"
     ],
     status: "In Progress",
-    link: "#",
+    link: "https://resume-ai-beryl-gamma.vercel.app/",
     github: "https://github.com/deveshgi/resumeAI"
   },
   {
